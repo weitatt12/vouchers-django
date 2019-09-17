@@ -1,0 +1,16 @@
+{% extends "vouchers/base.html" %}
+{% block content %}
+
+<h1>Diaplay Voucher</h1>
+
+<form action="{% url 'voucher_apply.views' %}", method="POST">
+    {% csrf_token %}
+    <label>Voucher</label>
+    <input type="text" name="voucherCODE" placeholder="Enter Your Code" />    
+    <button type="submit">Apply Voucher</button>
+</form> 
+
+
+
+
+{% endblock %}

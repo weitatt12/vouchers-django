@@ -7,3 +7,5 @@ class VoucherAdmin(admin.ModelAdmin):
     form_search = ['form']
 
 admin.site.register(Voucher, VoucherAdmin)
+
+

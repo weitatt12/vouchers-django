@@ -10,5 +10,6 @@ class Voucher(models.Model):
     active = models.BooleanField()
 
     def __str__(self):
-        return self.form
+        return self.voucher_code
+
 
